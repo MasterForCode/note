@@ -53,6 +53,16 @@ grammar_cjkRuby: true
   network.host: 192.168.0.111
   http.port: 9200
   ```
+* 创建使用es的用户及用户组
+  ```bash
+  # 创建用户组
+  [root@localhost ~]# groupadd es
+  # 创建用户
+  [root@localhost ~]# useradd es -g es -p wangbin_123
+  # 分配权限
+  [root@localhost ~]# chown -R es:es /usr/local/elasticsearch-6.5.3/
+
+  ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
 * 9300端口是集群时节点间通讯使用
