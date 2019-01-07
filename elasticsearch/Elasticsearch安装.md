@@ -4,7 +4,7 @@ tags: elasticsearch
 grammar_cjkRuby: true
 ---
 
-
+# 环境
 1. 安装Java环境
 *  [下载jdk1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html  )压缩文件  
 *  解压
