@@ -48,6 +48,8 @@ grammar_cjkRuby: true
 * 修改配置文件
   ```bash
   [root@localhost ~]# vi /usr/local/elasticsearch-6.5.3/config/elasticsearch.yml
+  # 添加如下内容
+  cluster.name: my-es-test
   ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
