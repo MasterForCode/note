@@ -31,14 +31,14 @@ grammar_cjkRuby: true
 * [访问](http://192.168.0.111:5601)
 2. 操作Elasticsearch
 * 操作索引
- ```bash
- # 创建索引
- PUT /myindex
- # 删除索引
- DELETE /myindex
- # 查询索引
- GET /myindex
- ```
+  ```bash
+  # 创建索引
+  PUT /myindex
+  # 删除索引
+  DELETE /myindex
+  # 查询索引
+  GET /myindex
+  ```
  * 文档操作
    ```bash
    # 创建文档，格式为/索引/类型/id
@@ -46,7 +46,6 @@ grammar_cjkRuby: true
    {
    "name": "张三",
    "age": 13
-   }
-	  # 查询文档
+   }  # 查询文档
 	  GET /myindex
    ```
