@@ -72,6 +72,12 @@ grammar_cjkRuby: true
   # 最后添加
   vm.max_map_count=262144
   ```
+* 开放端口
+  ```bash
+  # 开放需要的端口
+  [root@localhost ~]# firewall-cmd --zone=public --add-port=9300/tcp --permanent
+  [root@localhost ~]# firewall-cmd --reload
+  ```
 * 运行Elasticsearch
   ```bash
   # 切换用户
