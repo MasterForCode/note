@@ -41,6 +41,10 @@ grammar_cjkRuby: true
  # 将版本替换成最新版本
 [root@localhost ~]# wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.tar.gz
  ```
+ * 解压到指定目录
+  ```bash
+  [root@localhost ~]# tar -zxvf elasticsearch-6.5.3.tar.gz -C /usr/local/
+  ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
 * 9300端口是集群时节点间通讯使用
