@@ -49,7 +49,7 @@ grammar_cjkRuby: true
   ```bash
   [root@localhost ~]# vi /usr/local/elasticsearch-6.5.3/config/elasticsearch.yml
   # 添加如下内容
-  cluster.name: my-es-test
+  cluster.name: myes
   network.host: 192.168.0.111
   http.port: 9200
   ```
