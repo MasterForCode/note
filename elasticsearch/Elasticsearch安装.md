@@ -36,6 +36,11 @@ grammar_cjkRuby: true
 	```
 # 安装
 2. 安装Elasticsearch
+* 下载Elasticsearch
+ ```bash
+ # 将版本替换成最新版本
+[root@localhost ~]# wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.tar.gz
+ ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
 * 9300端口是集群时节点间通讯使用
