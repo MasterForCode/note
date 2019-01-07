@@ -13,4 +13,5 @@ grammar_cjkRuby: true
  PUT /myindex
  # 删除索引
  # 查询索引
+ GET /myindex
  ```
