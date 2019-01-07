@@ -15,3 +15,7 @@ grammar_cjkRuby: true
  # 查询索引
  GET /myindex
  ```
+ * 文档操作
+ ```bash
+ # 创建文档
+ ```
