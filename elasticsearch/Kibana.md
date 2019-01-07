@@ -6,6 +6,29 @@ grammar_cjkRuby: true
 
 
 1. 安装
+* 下载解压
+  ```bash
+  # 下载
+  [root@localhost ~]# wget https://www.elastic.co/downloads/kibana
+  # 解压
+  [root@localhost ~]# tar -zxvf kibana-6.5.3-linux-x86_64.tar.gz -C /usr/local/
+  ````
+* 修改配置文件
+  ```bash
+  [root@localhost ~]# vi /usr/local/kibana-6.5.3-linux-x86_64/config/kibana.yml 
+  # 添加
+  server.host: "192.168..0.111"
+  elasticsearch.url: "http://192.168.0.111:9200"
+  ```
+* 验证
+  ```bash
+  # 开放端口
+  [root@localhost ~]# firewall-cmd --zone=public --add-port=5601/tcp --permanent
+  [root@localhost ~]# firewall-cmd --reload
+  # 启动
+  [root@localhost ~]# /usr/local/kibana-6.5.3-linux-x86_64/bin/kibana
+  ```
+* [访问](http://192.168.0.111:5601)
 2. 操作Elasticsearch
 * 操作索引
  ```bash
