@@ -72,6 +72,10 @@ grammar_cjkRuby: true
   # 最后添加
   vm.max_map_count=262144
   ```
+* 运行Elasticsearch
+  ```bash
+  [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
+  ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
 * 9300端口是集群时节点间通讯使用
