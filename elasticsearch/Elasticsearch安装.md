@@ -61,7 +61,16 @@ grammar_cjkRuby: true
   [root@localhost ~]# useradd es -g es -p wangbin_123
   # 分配权限
   [root@localhost ~]# chown -R es:es /usr/local/elasticsearch-6.5.3/
-
+  ```
+* 修改系统参数
+  ```bash
+    [root@localhost ~]# vi /etc/security/limits.conf
+  # 最后添加
+  es hard nofile 65536
+  es soft nofile 65536
+  [root@localhost ~]#  vi /etc/sysctl.conf
+  # 最后添加
+  vm.max_map_count=262144
   ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
