@@ -39,7 +39,7 @@ grammar_cjkRuby: true
 * 下载Elasticsearch
   ```bash
   # 将版本替换成最新版本
- [root@localhost ~]# wget  https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.tar.gz
+  [root@localhost ~]# wget  https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.5.3.tar.gz
   ```
 * 解压到指定目录
   ```bash
@@ -64,7 +64,7 @@ grammar_cjkRuby: true
   ```
 * 修改系统参数
   ```bash
-    [root@localhost ~]# vi /etc/security/limits.conf
+  [root@localhost ~]# vi /etc/security/limits.conf
   # 最后添加
   es hard nofile 65536
   es soft nofile 65536
@@ -74,6 +74,8 @@ grammar_cjkRuby: true
   ```
 * 运行Elasticsearch
   ```bash
+  # 切换用户
+  [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
   [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
   ```
 * 默认占用1g内存，可已修改成512m
