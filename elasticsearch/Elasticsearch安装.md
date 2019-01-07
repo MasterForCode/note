@@ -27,7 +27,7 @@ grammar_cjkRuby: true
 	``` bash
 	[root@localhost jdk1.8.0_101]# source /etc/profile
 	```
-	* 测试
+* 测试
 	``` bash
 	[root@localhost jdk1.8.0_101]# java -version
 	java version "1.8.0_101"
