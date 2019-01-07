@@ -11,4 +11,6 @@ grammar_cjkRuby: true
  ```bash
  # 创建索引
  PUT /myindex
+ # 删除索引
+ 
  ```
