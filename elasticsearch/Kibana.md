@@ -12,6 +12,7 @@ grammar_cjkRuby: true
  # 创建索引
  PUT /myindex
  # 删除索引
+ DELETE /myindex
  # 查询索引
  GET /myindex
  ```
