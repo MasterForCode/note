@@ -76,6 +76,7 @@ grammar_cjkRuby: true
   ```bash
   # 开放需要的端口
   [root@localhost ~]# firewall-cmd --zone=public --add-port=9300/tcp --permanent
+  [root@localhost ~]# firewall-cmd --zone=public --add-port=9300/tcp --permanent
   [root@localhost ~]# firewall-cmd --reload
   ```
 * 运行Elasticsearch
