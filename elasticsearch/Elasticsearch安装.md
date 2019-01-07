@@ -85,6 +85,3 @@ grammar_cjkRuby: true
   [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
   ```
 * [访问](http://192.168.0.111:9200/)
-* 默认占用1g内存，可已修改成512m
-* 9200端口是节点与外部通讯使用
-* 9300端口是集群时节点间通讯使用
