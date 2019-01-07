@@ -50,6 +50,8 @@ grammar_cjkRuby: true
   [root@localhost ~]# vi /usr/local/elasticsearch-6.5.3/config/elasticsearch.yml
   # 添加如下内容
   cluster.name: my-es-test
+  network.host: 192.168.0.111
+  http.port: 9200
   ```
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
