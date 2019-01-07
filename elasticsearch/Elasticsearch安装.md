@@ -75,14 +75,14 @@ grammar_cjkRuby: true
 * 开放端口
   ```bash
   # 开放需要的端口
-  [root@localhost ~]# firewall-cmd --zone=public --add-port=9300/tcp --permanent
+  [root@localhost ~]# firewall-cmd --zone=public --add-port=9200/tcp --permanent
   [root@localhost ~]# firewall-cmd --zone=public --add-port=9300/tcp --permanent
   [root@localhost ~]# firewall-cmd --reload
   ```
 * 运行Elasticsearch
   ```bash
   # 切换用户
-  [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
+  [root@localhost ~]# su - es
   [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
   ```
 * [访问](http://192.168.0.111:9200/)
