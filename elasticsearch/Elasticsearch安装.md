@@ -34,6 +34,7 @@ grammar_cjkRuby: true
 	Java(TM) SE Runtime Environment (build 1.8.0_101-b13)
 	Java HotSpot(TM) 64-Bit Server VM (build 25.101-b13, mixed mode)
 	```
+# 安装
 2. 安装Elasticsearch
 * 默认占用1g内存，可已修改成512m
 * 9200端口是节点与外部通讯使用
