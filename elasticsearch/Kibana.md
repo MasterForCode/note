@@ -17,5 +17,12 @@ grammar_cjkRuby: true
  ```
  * 文档操作
  ```bash
- # 创建文档
+ # 创建文档，格式为/索引/类型/id
+ PUT /myindex/user/1
+ {
+ 	"name": "张三",
+	"age": 12
+	}
+	# 查询文档
+	GET /myindex
  ```
