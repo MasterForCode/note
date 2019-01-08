@@ -55,5 +55,7 @@ grammar_cjkRuby: true
    "age": 13
    }  
    # 查询文档
-	  GET /myindex/user/1
+	GET /myindex/user/1
+   # user类型下的所有文档
+	GET /myindex/user/_search
    ```
