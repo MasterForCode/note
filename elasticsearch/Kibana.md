@@ -41,11 +41,19 @@ grammar_cjkRuby: true
   ```
  * 文档操作
    ```bash
-   # 创建文档，格式为/索引/类型/id
+   # 创建文档，格式为/索引/类型/id（PUT方式）
    PUT /myindex/user/1
    {
    "name": "张三",
    "age": 13
-   }  # 查询文档
+   }
+   # 创建文档，格式为/索引/类型（POST方式）
+   # 自动生成id
+   POST /myindex/user/1
+   {
+   "name": "张三",
+   "age": 13
+   }  
+   # 查询文档
 	  GET /myindex
    ```
