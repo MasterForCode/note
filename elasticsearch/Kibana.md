@@ -93,4 +93,17 @@ grammar_cjkRuby: true
 			}
 		}
 	}
+	# 指定数据类型和分词器
+	PUT /myindex/_mapping/user
+	 {
+	   "properties": {
+		 "age":{
+		   "type": "integer"
+		 },
+		 "name": {
+		   "type":"text",
+		   "analyzer": "ik_smart"
+		 }
+	   }
+	 }
    ```
