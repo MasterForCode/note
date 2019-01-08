@@ -38,6 +38,8 @@ grammar_cjkRuby: true
   DELETE /myindex
   # 查询索引
   GET /myindex
+  # 查询类型映射
+  GET /myindex/_mapping
   ```
  * 文档操作
    ```bash
