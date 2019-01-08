@@ -91,5 +91,12 @@ grammar_cjkRuby: true
 * 下载与Elasticsearch版本相同的[分词器](https://github.com/medcl/elasticsearch-analysis-ik/releases)
 * 上传到服务器并解压到Elasticsearch的安装目录下的plugins
   ```bash
-  
+  # 先终止Elasticsearch
+  # 解压到指定目录
+  [root@localhost ~]# unzip elasticsearch-analysis-ik-6.5.3.zip -d /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3
+  # 切换到Elasticsearch用户
+  [root@localhost ~]# su - es
+  # 启动
+  [es@localhost ~]$ /usr/local/elasticsearch-6.5.3/bin/elasticsearch
+
   ```
