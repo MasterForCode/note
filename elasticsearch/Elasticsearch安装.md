@@ -104,5 +104,25 @@ grammar_cjkRuby: true
  4. 自定义分词器的扩展字典
    ```bash
  # 新增文件并写入自定义字典  
-[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/new_word.dic
+[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/new_word.dic                      
+[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/IKAnalyzer.cfg.xml 
+修改成
+extra_main.dic                  extra_single_word_low_freq.dic  main.dic                        quantifier.dic                  surname.dic
+extra_single_word.dic           extra_stopword.dic              new_word.dic                    stopword.dic                    
+extra_single_word_full.dic      IKAnalyzer.cfg.xml              preposition.dic                 suffix.dic                      
+[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/IKAnalyzer.cfg.xml 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+        <comment>IK Analyzer 扩展配置</comment>
+        <!--用户可以在这里配置自己的扩展字典 -->
+        <entry key="ext_dict">new_word.dic</entry>
+         <!--用户可以在这里配置自己的扩展停止词字典-->
+        <entry key="ext_stopwords"></entry>
+        <!--用户可以在这里配置远程扩展字典 -->
+        <!-- <entry key="remote_ext_dict">words_location</entry> -->
+        <!--用户可以在这里配置远程扩展停止词字典-->
+        <!-- <entry key="remote_ext_stopwords">words_location</entry> -->
+</properties>
+
    ```
