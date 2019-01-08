@@ -86,3 +86,10 @@ grammar_cjkRuby: true
   [root@localhost ~]# /usr/local/elasticsearch-6.5.3/bin/elasticsearch
   ```
 * [访问](http://192.168.0.111:9200/)
+
+3. 安装ik分词器
+* 下载与Elasticsearch版本相同的[分词器](https://github.com/medcl/elasticsearch-analysis-ik/releases)
+* 上传到服务器并解压到Elasticsearch的安装目录下的plugins
+  ```bash
+  
+  ```
