@@ -102,3 +102,6 @@ grammar_cjkRuby: true
   ```
   
  4. 自定义分词器的扩展字典
+   ```bash
+   
+   ```
