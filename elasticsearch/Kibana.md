@@ -69,4 +69,5 @@ grammar_cjkRuby: true
    GET /myindex/user/_search?q=age[10 TO 15]
    # 查询并排序
    GET /myindex/user/_search?q=age[10 TO 15]&sort=age:desc
+   GET /myindex/user/_search?q=age[10 TO 15]&sort=age:desc&from=0&size=2
    ```
