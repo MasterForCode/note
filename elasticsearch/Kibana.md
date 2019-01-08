@@ -67,4 +67,5 @@ grammar_cjkRuby: true
    GET /myindex/user/_search?q=age:13
    # TO要大写
    GET /myindex/user/_search?q=age[10 TO 15]
+   GET /myindex/user/_search?q=age[10 TO 15]&sort=age:desc
    ```
