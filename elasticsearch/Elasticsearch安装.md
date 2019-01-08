@@ -93,9 +93,9 @@ grammar_cjkRuby: true
   ```bash
   # 先终止Elasticsearch
   # 解压到指定目录
-  [root@localhost ~]# unzip elasticsearch-analysis-ik-6.5.3.zip -d /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3
+  [es@localhost ~]# unzip elasticsearch-analysis-ik-6.5.3.zip -d /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3
   # 切换到Elasticsearch用户
-  [root@localhost ~]# su - es
+  [es@localhost ~]# su - es
   # 启动
   [es@localhost ~]$ /usr/local/elasticsearch-6.5.3/bin/elasticsearch
 
