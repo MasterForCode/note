@@ -103,14 +103,11 @@ grammar_cjkRuby: true
   
  4. 自定义分词器的扩展字典
     ```bash
+	# 停止Elasticsearch
     # 新增文件并写入自定义字典  
 	[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/new_word.dic                      
 	[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/IKAnalyzer.cfg.xml 
-	修改成
-	extra_main.dic                  extra_single_word_low_freq.dic  main.dic                        quantifier.dic                  surname.dic
-	extra_single_word.dic           extra_stopword.dic              new_word.dic                    stopword.dic                    
-	extra_single_word_full.dic      IKAnalyzer.cfg.xml              preposition.dic                 suffix.dic                      
-	[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/IKAnalyzer.cfg.xml 
+	#修改成
 	<?xml version="1.0" encoding="UTF-8"?>
 	<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 	<properties>
