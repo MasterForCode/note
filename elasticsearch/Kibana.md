@@ -63,4 +63,6 @@ grammar_cjkRuby: true
    {
 	"ids": [1, 2]
    }
+   # 条件查询
+   GET /myindex/user/_search?q=age:13
    ```
