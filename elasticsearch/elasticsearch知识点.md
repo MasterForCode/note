@@ -8,4 +8,4 @@ time: 2019.1.6
 * 类比数据库索引（index对应数据库）=》类型（type对应表）=》文档（document对应行）=》字段（fields对应列）
 2. 9200端口和9300端口
 * 9200是Elasticsearch为restful查询提供的端口
-* 9300是Elasticsearch节点间通讯或者客户端可服务端通讯的端口
+* 9300是Elasticsearch节点间通讯的端口
