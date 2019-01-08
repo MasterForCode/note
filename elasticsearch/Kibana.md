@@ -65,4 +65,6 @@ grammar_cjkRuby: true
    }
    # 条件查询
    GET /myindex/user/_search?q=age:13
+   # TO要大写
+   GET /myindex/user/_search?q=age[10 TO 15]
    ```
