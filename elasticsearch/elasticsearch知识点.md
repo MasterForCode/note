@@ -33,3 +33,6 @@ time: 2019.1.6
   指定数据类型
 * String类型分为text和keyword，keyword不进行分词处理，只能精确查询
 
+5. 分片
+* 
+
