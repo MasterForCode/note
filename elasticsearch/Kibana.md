@@ -61,6 +61,6 @@ grammar_cjkRuby: true
    # 根据多个id查询
    GET /myindex/user/_mget
    {
-	  "ids": [1, 2]
+	"ids": [1, 2]
    }
    ```
