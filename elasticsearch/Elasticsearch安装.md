@@ -103,5 +103,6 @@ grammar_cjkRuby: true
   
  4. 自定义分词器的扩展字典
    ```bash
-   
+ # 新增文件并写入自定义字典  
+[es@localhost ~]$ vi /usr/local/elasticsearch-6.5.3/plugins/elasticsearch-analysis-ik-6.5.3/config/new_word.dic
    ```
