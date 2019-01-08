@@ -31,4 +31,5 @@ time: 2019.1.6
   不指定类型由Elasticsearch自动识别
 * 动态映射
   指定数据类型
+* String类型分为text和keyword，keyword不进行分词处理
 
