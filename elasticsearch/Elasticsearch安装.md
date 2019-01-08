@@ -79,6 +79,7 @@ grammar_cjkRuby: true
   [root@localhost ~]# firewall-cmd --zone=public --add-port=9300/tcp --permanent
   [root@localhost ~]# firewall-cmd --reload
   ```
+  
 * 运行Elasticsearch
   ```bash
   # 切换用户
@@ -98,5 +99,6 @@ grammar_cjkRuby: true
   [es@localhost ~]# su - es
   # 启动
   [es@localhost ~]$ /usr/local/elasticsearch-6.5.3/bin/elasticsearch
-
   ```
+  
+ 4. 自定义分词器的扩展字典
