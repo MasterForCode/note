@@ -75,7 +75,7 @@ grammar_cjkRuby: true
    GET /myindex/user/_search?q=age[10 TO 15]&sort=age:desc&from=0&size=2
    # DSL方式查询（以POST方式传json化的参数）
    # "name":"张三"是无效的因为默认分词器把中文的每个字都做分词
-   # term是精确匹配（对于英文精确，中文是模糊查询），不做分词
+   # term是精确匹配
    GET /myindex/user/_search
 	{
   	"query": {
@@ -84,7 +84,7 @@ grammar_cjkRuby: true
 			}
 		}
 	}
-   # match是模糊匹配（对于中文精确，英文是精确查询）会做分词后查询
+   # match是模糊匹配，会做分词后查询
 	GET /myindex/user/_search
 	{
   	"query": {
