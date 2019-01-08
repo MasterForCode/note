@@ -9,3 +9,4 @@ time: 2019.1.6
 2. 9200端口和9300端口
 * 9200是Elasticsearch为restful查询提供的端口
 * 9300是Elasticsearch节点间通讯的端口
+3. 倒排索引
