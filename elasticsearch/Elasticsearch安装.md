@@ -68,6 +68,8 @@ grammar_cjkRuby: true
   # 最后添加
   es hard nofile 65536
   es soft nofile 65536
+  * soft nproc 4096
+  * hard nproc 4096
   [root@localhost ~]#  vi /etc/sysctl.conf
   # 最后添加
   vm.max_map_count=262144
